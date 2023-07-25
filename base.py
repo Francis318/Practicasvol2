@@ -12,7 +12,7 @@ def create_file(file_name, content=None):
         raise OSError(f"You do not hav permisson to create '{file_name}'") from error
     if content and isinstance(content, (list, dict)):
         json_file = json.dumps(content)
-        file.write(content)
+        file.write(json_file)
     file.close()
 
 
