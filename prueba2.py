@@ -1,6 +1,12 @@
 import practica_class
 import json
 
+def decorator1(func):
+    def wrapper(self):
+        print("Inicio")
+        func(self)
+        print("Final")
+    return wrapper
 
 class User:
     def __init__(self, username, name, last_name, password):
@@ -10,6 +16,7 @@ class User:
         self.password = password
         self.dict = {}
 
+    @decorator1
     def save(self):
         file_name = "Users"
         contend = self
@@ -67,8 +74,8 @@ article2 = Article("new picture", "ardilla comiendo", "status2", "ardilla.jpg").
 Main_article = [article1, article2]
 
 User.save(user1)
-User.save(user2)
-Article.save(article1)
-Article.save(article2)
-Comments.save(comments1)
-Comments.save(comments2)
+# User.save(user2)
+# Article.save(article1)
+# Article.save(article2)
+# Comments.save(comments1)
+# Comments.save(comments2)

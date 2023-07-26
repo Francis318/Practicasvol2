@@ -1,1 +1,8 @@
-[{"username": "Francis", "name": "Francisco", "last_name": "Reyes", "password": "123", "dict": {}}, {"username": "Kike", "name": "Enrique", "last_name": "Alaniz", "password": "456", "dict": {}}]
+[
+  {
+    "username": "Francis",
+    "name": "Francisco",
+    "last_name": "Reyes",
+    "password": "123"
+  }
+]
